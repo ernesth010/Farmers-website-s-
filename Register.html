@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="header">
+        <h1>AgriConnect Portal</h1>
+        <p>Empowering Farmers with Timely Information in Their Language</p>
+    </div>
+    <div class="container">
+        <h2>Farmer Registration </h2>
+        <form action="registrationForm">
+            <label for="Name">Full Name:</label>
+            <input type="text" name="name" required><br><br>
+            <label for="ID">ID Number:</label>
+            <input type="number" name="id number" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" required><br><br>
+            <div class="gender">
+            <h3>Gender:</h3>
+            <div class="family">
+           Male:<input type="radio" name="gender" value="male">
+           Female:<input type="radio" name="gender" value="female"></div></div>
+            <label for="image">Upload Image</label>
+            <input type="file" name="image" required><br><br>
+            <label for="farming type">Type of Farming:</label>
+            <select name="farmingType" id="farmingType">
+                <OPtion value="" disabled selected>Select type of farming</OPtion>
+                <option value="crop">Crop Farming</option>
+                <option value="livestock">Livestock Farming</option>
+                <option value="mixed">Mixed Farming</option>
+            </select><br><br>
+            <label for="region">Region:</label>
+            <input type="text" name="region" required><br><br>
+            <label for="language">Preferred Language:</label>
+            <input type="text" name="language" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+
+    </div>
+</body>
+</html>
