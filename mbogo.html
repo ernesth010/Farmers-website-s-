@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f3f3;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+    input, select, button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Farmer Registration</h2>
+    <!-- Use the form's submit event -->
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="region" placeholder="Region" required>
+      <select id="farmingType" required>
+        <option value="">Select Farming Type</option>
+        <option value="Crop Farming">Crop Farming</option>
+        <option value="Livestock Farming">Livestock Farming</option>
+        <option value="Mixed Farming">Mixed Farming</option>
+      </select>
+      <select id="language" required>
+        <option value="">Preferred Language</option>
+        <option value="English">English</option>
+        <option value="Swahili">Swahili</option>
+        <option value="Local Language">Local Language</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <div id="output"></div>
+
+    <button id="showBtn">Show Registered Farmers</button>
+    <div id="farmerList"></div>
+  </div>
+
+  <script>
+    // Attach submit listener to prevent default form submission behavior
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent page refresh
+      storeData();
+    });
+
+    function storeData() {
+      const name = document.getElementById('name').value.trim();
+      const region = document.getElementById('region').value.trim();
+      const farmingType = document.getElementById('farmingType').value;
+      const language = document.getElementById('language').value;
+
+      console.log("Captured Data:", { name, region, farmingType, language });
+
+      if (name && region && farmingType && language) {
+        const farmerData = { name, region, farmingType, language };
+
+        // Retrieve existing data or create an empty array
+        let farmers = JSON.parse(localStorage.getItem('farmers')) || [];
+        farmers.push(farmerData);
+        localStorage.setItem('farmers', JSON.stringify(farmers));
+
+        console.log("Stored Farmers Data:", JSON.parse(localStorage.getItem('farmers')));
+        document.getElementById('output').innerHTML = <p style="color: green;">Farmer registered successfully!</p>;
+        document.getElementById('registrationForm').reset();
+      } else {
+        console.log("❌ Missing Fields");
+        document.getElementById('output').innerHTML = <p style="color: red;">Please fill in all fields.</p>;
+      }
+    }
+
+    // Show registered farmers when clicking the "Show Registered Farmers" button
+    document.getElementById('showBtn').addEventListener('click', displayFarmers);
+
+    function displayFarmers() {
+      const farmers = JSON.parse(localStorage.getItem('farmers')) || [];
+      const farmerListDiv = document.getElementById('farmerList');
+
+      console.log("Farmers from Local Storage:", farmers);
+      if (farmers.length === 0) {
+        farmerListDiv.innerHTML = "<p>No farmers registered yet.</p>";
+      } else {
+        farmerListDiv.innerHTML = `<ul>${farmers.map(farmer =>
+          <li>${farmer.name} - ${farmer.region} - ${farmer.farmingType} - ${farmer.language}</li>
+        ).join('')}</ul>`;
+      }
+    }
+  </script>
+</body>
+</html>

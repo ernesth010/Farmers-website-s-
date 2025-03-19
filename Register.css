@@ -69,12 +69,13 @@ button{
         display: flex;
         align-items: center;
         margin-left: 29px;
+        gap: 3px;
     }
     .family input{
      display: flex;
      align-items: center;
      padding: 20px;
-     margin-top: 10px;
+     margin-top: 12px;
      cursor: pointer;
 
     }
