@@ -174,3 +174,21 @@ footer {
 .dairy-farming img{
     size: 200rem;
 }
+.dairy-farming img{
+    margin-top: -10rem;
+    width: 18rem;
+    
+    
+}
+.dairy-farming p b{ 
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+   margin-top: 90px;
+    margin-left: 4rem;
+    
+}
+.dairy-farming p b:hover {
+    color: rgb(176, 127, 255); 
+
+}
