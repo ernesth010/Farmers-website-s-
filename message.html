@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Update to Farmers</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <div class="container">
+  <h2>Send Update to Farmers</h2>
+
+  <form action="/send-update" method="POST">
+    <label for="update">Write Your Update</label>
+    <textarea id="update" name="update" rows="5" required></textarea>
+
+    <label for="farmingType">Select Farming Type</label>
+    <select id="farmingType" name="farmingType" required>
+      <option value="">--Select--</option>
+      <option value="crops">Crops</option>
+      <option value="livestock">Livestock</option>
+      <option value="fish">Fish Farming</option>
+    </select>
+
+    <label for="region">Select Region</label>
+    <select id="region" name="region" required>
+      <option value="">--Select--</option>
+      <option value="nairobi">Nairobi</option>
+      <option value="western">Western Kenya</option>
+      <option value="coast">Coast</option>
+      <option value="northeastern">North Eastern</option>
+      <option value="rift">Rift Valley</option>
+      
+    </select>
+
+    <label for="language">Select Preferred Language</label>
+    <select id="language" name="language" required>
+      <option value="">--Select--</option>
+      <option value="english">English</option>
+      <option value="swahili">Swahili</option>
+      <option value="kikuyu">Kikuyu</option>
+      <option value="luo">Luo</option>
+      <option value="kalenjin">Kalenjin</option>
+      <option value="kamba">Kamba</option>
+      <option value="kisii">Kisii</option>
+      <option value="borana">Borana</option>
+      <option value="maasai">Maasai</option>
+      <option value="turkana">Turkana</option>
+     
+    </select>
+
+    <button type="submit" style="margin-top: 20px;">Send Update</button>
+</div>
+  </form>
+</body>
+</html>

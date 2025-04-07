@@ -7,9 +7,14 @@ body{
 background-color: black;
 }
 .container{
-width: 550px;
-height: 600px;
+width: 600px;
+height: 550px;
 background-color: white;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
 align-content: center;
 margin: 20px 26rem;
 /* border: 10px solid; */
@@ -19,8 +24,8 @@ border-radius: 15px;
 
 }
 .inputs{
-    margin-left: 11px;
-    margin-bottom: 169px;
+    margin-left: 35px;
+    margin-top: 40px;
 }
 ::placeholder{
     font-size:medium;
@@ -28,14 +33,42 @@ border-radius: 15px;
 input{
     padding: 20px;
     /* border-radius: 0.2px; */
-    width: 31rem;
+    width: 32rem;
       
 }
 textarea{
-    width: 500px;
+    width: 510px;
     height: 200px;
+    padding: 5px;
+
 }
 textarea::placeholder{
      font-size: 19px;
     
+}
+div p{
+    color: green;
+    margin-left: 11px;
+    margin-top: 13px;
+}
+button{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    border-radius: 10px;
+    background-color:deepskyblue ;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: red;
+    box-shadow: 2px;
+   
+}
+button b{
+    color: white;
+    font-size: medium;
+}
+input, textarea:focus {
+    outline: transparent;
 }

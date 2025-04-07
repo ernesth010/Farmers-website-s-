@@ -8,11 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="inputs">     
-        <input type="text" placeholder="Enter your name"><br><br>
-        <input type="number" placeholder="Mobile number (+123456789123)"><br><br>
-        <textarea name="Message" id="message" placeholder="Enter your message here..."></textarea>
+    <div class="inputs">     
+        <input type="text" placeholder="Enter your name" required><br><br>
+        <input type="number" placeholder="Mobile number (+123456789123)" required><br><br>
+        <textarea name="Message" id="message" placeholder="Enter your message here..." required></textarea>
+        <p>Valid Phone No. Must start with a country code (e.g., +123) followed by 9 digits.</p>
     </div>
+
+
+     <button type="submit"><b>SUBMIT</b></button>
  
     </div>
 </body>
