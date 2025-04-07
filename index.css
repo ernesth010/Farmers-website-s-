@@ -4,24 +4,20 @@
     box-sizing: border-box;
     /* height: 100%; */
     position: relative;
+    max-width: 100%;
+    max-height: 100%;
 }
 body{
-    /* background-image: url(https://t4.ftcdn.net/jpg/01/80/06/15/360_F_180061581_X2dk6rx8IApmWMBIIO0wjjPX1A99iYn5.jpg) ; */
     height: 100vh;
     align-items: center;
     justify-content: center;
-     /* margin: 1px ; */
      padding: 0;
      width: 100vw;
-     /* position: relative; */
-     /* background-size: cover; */
+     width: 100%;
+     position: static;
+     max-width: 100%;
 
-     /* background-attachment: fixed; */
-     /* background-size: 100%;  */
-    /* background-position: center;  */
-   
-    
-}
+     }
 .hero-header{
     background-image: url(https://t4.ftcdn.net/jpg/01/80/06/15/360_F_180061581_X2dk6rx8IApmWMBIIO0wjjPX1A99iYn5.jpg) ;
     background-repeat: no-repeat; 
@@ -174,20 +170,38 @@ footer {
 .card{
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 30px;
     margin-top: 10px;
-    
+    overflow: hidden;
+    max-width: 90%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    border-right: 0.2px solid gray;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .card img{
-    width: 18rem; 
-    height: 12rem;
+    width: 300px;
+    height: 222px;
+    /* border-radius:15px ; */
+    object-fit: cover;
+}
+.dairy-farming img{
+    width: 300px;
+    height: 222px;
+    
+    
+}
+.bee-farming img{
+    width: 300px;
+    height: 222px; 
 }
 .card p b{
     color: black;
     font-size: 20px;
     cursor: pointer;
    margin-top: 90px;
-    margin-left: 4rem;
+    margin-left: 1rem;
 }
 .card p b:hover{
     color: rgb(176, 127, 255); 
