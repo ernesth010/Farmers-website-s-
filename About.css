@@ -12,6 +12,13 @@ header{
     justify-items: center;
     margin-top: 9rem;
 }
+.image img{
+    background-color:lavender;
+    width: 200px;
+    height: 200px;
+    margin: 20px 90px;
+    margin-bottom: -170px;
+}
 .about{
     justify-items: center;
     font-size: 21px;

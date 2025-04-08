@@ -1,22 +1,52 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: skyblue;
   }
   label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    margin-left: 29px;
+    margin-left: 41px;
+    color: green;
+    
   }
   select, textarea, button {
     width: 70%;
     padding: 10px;
     margin-top: 5px;
     margin-left: 44PX;
+    cursor: pointer;
+  }
+  textarea{
+    outline: transparent;
   }
   .container{
-    width: 600px;
+    width: 500px;
     border: 2px solid gray;
     margin-left: 20rem;
     height: 500px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 22px auto;
+    padding: auto;
+  }
+  .container h2{
+    color: red;
+    padding: 0px 110px;
+  }
+  button{
+    background-color: aquamarine;
+    transition: all 2s ease;
+    border-radius: 11px;
+  }
+  button:hover{
+    background-color: orange;
+   
+    overflow: hidden;
+    padding: 10px 20px;
+    }
+  button b:hover{
+    transform: translateY(-40px);
+    color: white;
   }

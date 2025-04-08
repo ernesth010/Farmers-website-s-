@@ -173,23 +173,27 @@ footer {
     gap: 30px;
     margin-top: 10px;
     overflow: hidden;
-    max-width: 90%;
+    max-width: 97%;
     overflow-x: scroll;
     scrollbar-width: none;
     border-right: 0.2px solid gray;
     cursor: pointer;
     white-space: nowrap;
+    padding: 10px 1px;
 }
 .card img{
-    width: 300px;
+    width: 3000px;
     height: 222px;
     /* border-radius:15px ; */
     object-fit: cover;
 }
 .dairy-farming img{
     width: 300px;
-    height: 222px;
-    
+    height: 222px;    
+}
+.plantation-farming img{
+    width: 300px;
+    /* height: 222px;  */
     
 }
 .bee-farming img{

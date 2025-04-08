@@ -22,23 +22,34 @@ body{
     margin-top: 67px;
     border-radius: 15px;
     box-shadow: 0 10px 35px rgba(0, 0, 1, 0.9);
-    
+   
 }
 button{
     background-color:cornflowerblue;
     color: #fff;
     cursor: pointer;
-    padding: 2px 12px;
-    margin-left: 9rem;
+    /* padding: 2px 12px; */
+    margin-left: 4rem;
     margin-top: 9px;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 10px;
+    }
+    button b{
+        font-size: 17px;
     }
     button:hover{
         background-color: #45a049;
+        transition: 3s ease;
+    }
+    button b:hover{
+        color:aqua;
     }
     label{
         margin: 10px 0 5px;
         /* display: block; */
         font-weight: bold;
+        outline: transparent;
     }
     input, select{
         padding: 10px;
