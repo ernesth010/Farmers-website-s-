@@ -9,7 +9,7 @@
     <div class="container">
   <h2>Send Update to Farmers</h2>
 
-  <form action="/send-update" method="POST">
+  <form action="/send-update" method="POST" id="farmerForm">
     <label for="update">Write Your Update</label>
     <textarea id="update" name="update" rows="5" required></textarea>
 
@@ -50,8 +50,10 @@
      
     </select>
 
-    <button type="submit" style="margin-top: 20px; font-size: medium;"><b>Send Update</b></button>
-</div>
+    <button id="update" type="submit" style="margin-top: 20px; font-size: medium;"><b>Send Update</b></button>
   </form>
+</div>
+ 
+  <script src="message.js"></script>
 </body>
 </html>
