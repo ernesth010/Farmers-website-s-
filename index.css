@@ -53,7 +53,7 @@ body{
     filter: brightness(100%);
 }
 .header h1{
-    margin-left: 477px;
+    margin-left: 510px;
     color:aqua;
 }
 .header{
@@ -61,7 +61,7 @@ body{
     position: relative;
 }
 .header p{
-    margin-left: 430px;
+    margin-left: 460px;
     color: cadetblue;
 }
 nav marquee h2 {
