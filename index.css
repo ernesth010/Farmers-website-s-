@@ -7,6 +7,7 @@
     max-width: 100%;
     max-height: 100%;
 }
+
 body{
     height: 100vh;
     align-items: center;
@@ -67,6 +68,13 @@ body{
 nav marquee h2 {
     color: aquamarine;
 
+}
+.login{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: -1.6rem; 
+    margin-left: 20px;
 }
 .nav-links ul{
     display: flex;
