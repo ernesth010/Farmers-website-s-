@@ -71,10 +71,47 @@ nav marquee h2 {
 }
 .login{
     display: flex;
+    gap: 9px;
+    margin-left: 1rem;
+    /* padding: 9px;  */
+    /* margin: 0 11px; */
+     margin-bottom: -15px;
+     
+}
+.admin:hover{
+    color: #333;
+    background-color: wheat;
+}
+.farmer:hover{
+    color: white;
+    background-color: wheat;
+}
+a{
+    text-decoration: none;
+}
+.login a{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.admin{
+    border: 2px solid green;
+    width: 66px;
+    height: 35px;
+    align-content: center;
     align-items: center;
-    gap: 12px;
-    margin-bottom: -1.6rem; 
-    margin-left: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+.farmer{
+    border: 2px solid green;
+    width: 75px;
+    height: 35px;
+    background-color: #ddd;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 .nav-links ul{
     display: flex;
@@ -87,6 +124,11 @@ nav marquee h2 {
 .nav-links ul li{
     /* display: inline; */
     margin: 0 11px;
+}
+.nav-links ul li:hover{
+    text-decoration:underline solid red;
+    color: #f9f9f9;
+    border-radius: 2px solid blue;
 }
 .main-header h2{
     /* background-color: blue; */
